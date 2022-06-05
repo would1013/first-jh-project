@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .bg {
+            height: 40px;
+            background: linear-gradient(to right, #2d64a7, #2d64a7 calc(50% + 162px), #474747 calc(50% - 162px), #474747);
+        }
+        .bg2{
+            height: 260px;
+            background: linear-gradient(to right,#f3f3f3,#f3f3f3 50%,#6e9bc6 50%,#6e9bc6);
+        }
+        .bg2>div{
+            width: 980px;
+            margin: 0 auto;
+            border: 1px solid red;
+        }
+        .bg2>div::after{
+            content: "";
+            display: block;
+            clear: both;
+        }
+        .bg2>div>div{float:left}
+        .bg2>div div:nth-child(1){width: 50%;}
+        .bg2>div div:nth-child(2){width: 326px; height: 260px; background: #cedbe7;}
+        .bg2>div div:nth-child(3){width: 164px;}
+    </style>
+</head>
+
+<body>
+    <div class="bg"></div>
+    <br>
+    <br>
+    <div class="bg2">
+        <div>
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+        </div>
+    </div>
+</body>
+
+</html>
